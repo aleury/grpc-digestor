@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package digestor;
+
+service Digestor {
+    rpc GetDigest(DigestRequest) returns (DigestResponse);
+}
+
+message DigestRequest {
+    string ToDigest = 1;
+}
+
+message DigestResponse {
+    string Digest = 1;
+}
