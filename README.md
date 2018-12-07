@@ -4,7 +4,7 @@ To generate the gRPC stubs execute `make build` or
 python -m grpc_tools.protoc --proto_path=./proto --python_out=. --grpc_python_out=. ./proto/digestor/digestor.proto
 ```
 
-To test:
+To test, start the server via `make run` and execute:
 
 ```
 In [1]: from digestor.client import DigestorClient
